@@ -1,0 +1,159 @@
+.card {
+    background-color:#F2F2F2;
+    width: 70%;
+    border: 2px solid #e7e7e7;
+    border-radius: 14px;
+    padding: .5rem;
+    margin: 15px 0 0 15px;     
+}
+
+.card:hover {
+    background-color: #e7e7e7;
+}
+
+.card-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.id {
+    font: bold 20px Arial, sans-serif;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    font: bold 35px Arial, sans-serif;
+}
+
+.types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.type {
+    font: bold 20px Arial, sans-serif;
+}
+
+.image {
+    width: 40%;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px) { 
+    .image { display: none; }      
+}
+
+
+
+
+
+
+
+
+
+.modal {
+  /* This way it could be display flex or grid or whatever also. */
+  display: block;
+  
+  /* Probably need media queries here */
+  width: 100vh;
+  max-width: 100%;
+  
+  height: 100%;
+  max-height: 100%;
+  
+  position: fixed;
+  
+  z-index: 100;
+  
+  left: 50%;
+  top: 50%;
+  
+  /* Use this for centering if unknown width/height */
+  transform: translate(-50%, -50%);
+  
+  /* If known, negative margins are probably better (less chance of blurry text). */
+  /* margin: -200px 0 0 -200px; */
+  
+  background: #EBF0F4;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+.modal .card-arrow-back {
+    position: absolute;
+    z-index: 1;  
+    top: 10px;
+    right: 20px;
+    padding: 5px 10px;
+  
+    height: 60px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.card-arrow-back:hover {
+    -webkit-filter: drop-shadow(0px 1px 1px #222);
+    filter: drop-shadow(0px 1px 1px #222);
+}
+
+.modal-card-data {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-card-name {
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    font: bold 35px Arial, sans-serif;
+}
+
+.modal-card-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cadetblue;
+    margin-top: 10px;
+    border-radius: 10px;  
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modal-image {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-table {
+    width: 80%;
+    table-layout: fixed;
+}
+
+.modal-table-stats-base {
+    font: bold 15px Arial, sans-serif;
+}
+
+.modal-table-stats-name {
+    font: bold 12px Arial, sans-serif;
+    background-color: cadetblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.modal-description {
+    font: bold 15px Arial, sans-serif;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
