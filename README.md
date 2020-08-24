@@ -26,3 +26,33 @@ El proyecto se puede ejecutar con
 
 Y correrá la aplicación en modo desarrollo.<br />
 Abriendo el navegador en  [http://localhost:3000](http://localhost:3000) se puede ver el proyecto.
+
+También se puede acceder al proyecto ya deployado con Github Pages en [https://andrescenci.github.io/pokedex/](https://andrescenci.github.io/pokedex/).
+
+## TO DO
+
+**Soporte de idiomas**
+
+El soporte de idiomas de la pokeapi es bastante deficiente, hay que llamar muchos endpoints extras para obtener las traducciones para una sola temática.  Además de que por cada llamado vienen las traducciones de todos los idiomas sin distinción.
+
+En la misma sección de issues recomiendan bajar los archivos csv que tienen en el proyecto y armar una base de datos para obtener más rápido las traducciones.
+
+Pensé en armar unos json con las traducciones para utilizar con intl, pero requiere de mucho esfuerzo. Así que sólo se da soporte al idioma inglés. 
+
+Sin embargo, se deja el componente toggle para switchear de idioma y retomarlo en el futuro.
+
+---
+
+**Testing**
+
+Queda pendiente realizar tests unitarios tanto para la api como para los distintos componentes.
+
+---
+
+**Features**
+
+Agregar un componente de paginación para agilizar el pasaje de páginas. Saltar de a 5 pokemones para llegar a un punto avanzado se hace una eternidad.
+
+Agregar un input de búsqueda.
+
+Entender mejor de qué demonios se trata el mundo Pokémon para saber cuáles datos son importantes y cuáles no para mostrarlos de manera adecuada.
